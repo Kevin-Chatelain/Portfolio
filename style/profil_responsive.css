@@ -28,7 +28,6 @@ main {
     border-radius: 100%;
     transform: translateX(20px);
     z-index: 2;
-    background-image: url("coatchad.png");
 }
 
 .text-profil {
