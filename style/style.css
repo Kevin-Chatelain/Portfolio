@@ -78,8 +78,9 @@ html {
     color: #000;
 }
 
-
-    
+body {
+    width: 100%;
+}
 
 body * {
     text-decoration: none;
