@@ -1,0 +1,18 @@
+
+
+
+main {
+    margin-top: 5%;
+}
+
+.menu {
+    display: none;
+}
+
+header>ul {
+    display: flex !important;
+}
+
+.contact {
+    display: inline-block;
+}

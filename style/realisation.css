@@ -1,0 +1,121 @@
+main {
+    margin-top: 10px;
+    width: 80%;
+}
+
+body {
+    position: relative;
+}
+
+h1 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 2.5em;
+    font-family: 'Poppins';
+}
+
+.realisation-container {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.realisation-container>div {
+    width: 25%;
+    margin: 30px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.realisation-container>div {
+    width: 25%;
+    margin: 30px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.realisation-container>div>p {
+    background-color: rgba(0, 0, 0, 0.364);
+}
+
+/* .realisation-container>div:hover {
+    transform: scale(1.1, 1.1);
+} */
+
+
+.realisation-container>div>img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.realisation-container>div>h2 {
+    display: none;
+}
+
+
+.choix_bouton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.choix_bouton>p {
+    margin: 20px;
+    font-family: 'Poppins';
+    padding: 5px 30px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid white;
+    padding: 5px 30px;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+}
+
+
+.real-show {
+    position: fixed;
+    width: 90%;
+    border-radius: 15px;
+    height: 90vh;
+    background-color: var(--black);
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    border: 5px solid white;
+}
+
+.real-show>div {
+    position: relative;
+}
+
+.real-show>.croix2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.croix2 {
+    width: 50px;
+    height: 50px;
+    margin: 160px auto 0px auto;
+    background: var(--main_gradient);
+    display: grid; 
+    place-content: center;
+    border-radius: 100%;
+}

@@ -1,0 +1,89 @@
+.texte_accueil>h1 {
+    font-size: 3em;
+
+}
+
+.texte_accueil>p {
+    font-size: 1.8em;
+}
+
+
+
+
+.bottom {
+    flex-direction: row;
+}
+.easter_egg {
+    transition: 0.4s;
+    position: absolute;
+    opacity: 0;
+    left: 450px;
+    top: 100px;
+    padding: 30px 35px;
+    color: black;
+    background-color: white;
+    clip-path: polygon(0 89%, 9% 74%, 100% 73%, 100% 26%, 42% 26%, 10% 26%);
+}
+
+
+.planete {
+    margin: 70px 20px 0px 75px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: var(--main_gradient);
+    position: relative;
+    left: 0%;
+    transform: rotateX(15deg);
+    transform-style: preserve-3d;
+}
+
+.ring {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    /* border: 3px solid white; */
+    border-radius: 100%;
+    top: -75px;
+    left: -75px;
+    animation: rotate-planet 4s linear infinite;
+    transform-style: preserve-3d;
+}
+
+
+
+.soucoupe {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(218, 218, 218);
+    left: calc(50% - 15px);
+    top: -15px;
+    position: absolute;
+    transform-style: preserve-3d;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    /* transform: rotateX(0deg) rotateZ(15deg); */
+}
+
+.decouvrir {
+    display: inline-block !important;
+    margin-top: 100px;
+    height: fit-content;
+    font-size: 2.6em;
+    letter-spacing: 8px;
+    border-color: transparent;
+    padding: 18px 50px;
+    transform: translateX(70px);
+    /* margin-top: 2px; */
+}
+
+.decouvrir:hover {
+    letter-spacing: 2px;
+    border-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+

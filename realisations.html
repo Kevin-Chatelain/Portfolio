@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bienvenue sur mon e-portfolio !">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/responsive.css">
+    <link rel="stylesheet" href="style/realisation.css">
+    <title>KC - Bienvenue</title>
+</head>
+
+<div class="real-show hidden">
+    <div class="croix2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+    </div>
+
+    <div class="real-show-content"></div>
+</div>
+
+<body class="nuit">
+
+    <div class="menu_volant nuit">
+
+        <header>
+            <a href="index.html"><p class="logo">KC</p></a>
+
+        </header>
+
+        <nav>
+
+            <a href="index.html">Accueil</a>
+            <a href="profil.html">Profil</a>
+            <a href="realisations.html">Réalisations<div class="barre"></div></a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="croix">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+
+    </div>
+
+
+
+
+
+    <header>
+        <a href="index.html"><p class="logo">KC</p></a>
+
+        <ul style="display: none;">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="realisations.html">Réalisations</a><div class="barre"></div></li>
+        </ul>
+        
+        <div class="menu">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 14.5 12" style="enable-background:new 0 0 14.5 12;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;}
+            </style>
+            <path class="st0" d="M12.9,2.6c0,0.4-0.2,0.7-0.5,0.7h-10C2.1,3.3,1.9,3,1.9,2.6s0.2-0.7,0.5-0.7h10C12.7,1.9,12.9,2.2,12.9,2.6z"/>
+            <path class="st0" d="M12.9,5.8c0,0.4-0.2,0.7-0.5,0.7h-10c-0.3,0-0.5-0.3-0.5-0.7s0.2-0.7,0.5-0.7h10C12.7,5.2,12.9,5.5,12.9,5.8z"
+                />
+            <path class="st0" d="M12.9,9c0,0.4-0.2,0.7-0.5,0.7h-10C2.1,9.7,1.9,9.4,1.9,9s0.2-0.7,0.5-0.7h10C12.7,8.3,12.9,8.6,12.9,9z"/>
+            </svg>
+        </div>
+
+
+
+
+        <a href="contact.html" class="contact">Contact</a>
+    </header>
+
+    <main>
+
+        <h1>Mes réalisations !</h1>
+
+        <div class="choix_bouton">
+            <p id="tout" class="selected">Tout</p>
+            <p id="groupe">En groupe</p>
+            <p id="solo">Solo</p>
+        </div>
+
+        <div class="realisation-container">
+            <div class="solo tout"><img src="/img/img-realisations/timer.jpg" alt="timer">
+                <h2>Timer JavaScript</h2>
+
+                <p>Ce projet consiste en un chronomètre réalisé en HTML, CSS et JavaScript. Avec une durée donnée,
+                    il renvoit plusieurs statistiques que l'on pourrait souhaiter savoir à propos de cette durée. 
+                    L'avancement, le temps restant, tout cela illustré graphiquement comme par exemple avec une barre 
+                    de progression. Si la barre est remplie, la durée est alors completement écoulée. L'écoulement du
+                    temps est aussi illustré par des chiffres, montrant le nombre de secondes, minutes, heures ou même jours 
+                    restant. 
+
+                    Cela est possible grace à la fonction <code>Date</code> en JavaScript. Ce qui me permet dans 
+                    ce projet de dynamiquement mettre à jour le Timer chaque seconde.
+                </p>
+            </div>
+            <div class="solo tout"><img src="/img/img-realisations/dino.jpg"  alt="dino">
+                <h2>Le jeu du Dino</h2>
+
+                <p>Le jeu du dinosaure est une fonctionnalité cachée de Google. Quand une recherche est faite 
+                    alors que l'utilisateur n'est pas connecté à internet, le moteur de recherche renvoit une page 
+                    contenant comme seul résultat : une image d'un petit dinosaure et quelque informations textuelles.
+                    En appuyant sur la barre espace un jeu se lance. Le jeu du dinosaure ! 
+
+                    J'ai alors été intéressé par le fonctionnement du jeu, c'est pour cela que j'ai essayé de le refaire.
+                    Je me suis aidé des explications d'un créateur sur Youtube pour cela. Le fonctionnement est simple, une 
+                    animation projette des cactus en direction 
+                    quand la barre espace est préssée, l'image du dinosaure monte d'une certaine hauteur. 
+
+
+
+                </p>
+            </div>
+            <div class="solo tout"><img src="/img/img-realisations/login.jpg"  alt="login">
+                <h2>Page de Login</h2>
+            </div>
+            <div class="solo tout"><img src="/img/img-realisations/menu.jpg"  alt="menu">
+                <h2>Menu en CSS</h2>
+            </div>
+            <div class="solo tout"><img src="/img/img-realisations/todo.jpg" alt="todo">
+                <h2>To-Do-List en JavaScript</h2>
+            </div>
+            <div class="groupe tout"><img src="/img/img-realisations/ecofood.jpg" alt="ecofood">
+                <h2>Projet Universitaire partie 1</h2>
+            </div>
+            <div class="groupe tout"><img src="/img/img-realisations/nutry.jpg"  alt="nutry">
+                <h2>Projet Universitaire partie 2</h2>
+            </div>
+        </div>
+
+
+        
+    </main>
+
+
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/filtre.js"></script>
+    <script src="js/real.js"></script>
+    
+</body>
+</html>

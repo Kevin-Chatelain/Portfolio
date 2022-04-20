@@ -1,0 +1,32 @@
+.contact_body>main {
+    width: 75%;
+}
+
+
+.contact-container>h1, .contact-container>p {
+    text-align: left;
+}
+
+.contact-container>h1 {
+    font-size: 2em;
+}
+
+.contact-container>p {
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+.liens {
+    padding: 30px;
+}
+.liens>a {
+    font-size: 1.3em;
+}
+
+header {
+    transform: translateY(-20px);
+}
+
+header>.contact {
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.151); 
+}

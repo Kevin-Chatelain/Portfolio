@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    height: 70px; 
+    border-radius: 10px;
+    background: var(--main_gradient_reverse);
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    /* transform-style: preserve-3d; */
+}
+
+:root {
+    --white: #F4F4F4;
+    --black: #313131;
+    --violet: #c157ca;
+    --jaune: #e7d55f;
+    --main_gradient: linear-gradient(65deg, rgb(95, 231, 186) 16%, rgb(176, 97, 221) 87%);
+    --main_gradient_reverse: linear-gradient(300deg, rgb(176, 97, 221) 16%, rgb(95, 231, 186)  87%);
+    --no_gradient: linear-gradient(65deg, rgba(95, 231, 186, 0) 16%, rgba(176, 97, 221, 0) 87%);
+}
+
+.barre {
+    margin-top: 5px;
+    width: 100%;
+    height: 4px;
+    background: var(--main_gradient);
+    border-radius: 1px;
+
+}
+
+.ouvert {
+    transform: translateY(0px) !important;
+}
+
+
+
+
+
+
+
+.nuit {
+    background-color: var(--black);
+}
+
+.nuit * {
+    color: var(--white);
+}
+
+.jour {
+    background-color: var(--white);
+}
+
+.jour * {
+    color: #000;
+}
+
+
+    
+
+body * {
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    padding: 35px 0px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul>* {
+    margin: 0 40px;
+    list-style: none;
+}
+
+ul>li>a {
+    font-size: 1.5em;
+}
+
+.logo {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.menu {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background: var(--main_gradient);
+    display: grid;
+    place-content: center;
+}
+
+.menu>svg {
+    width: 45px;
+    fill: var(--white);
+}
+
+.contact {
+    display: none;
+    position: relative;
+}
+
+
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.menu_volant {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* background-color: var(--white); */
+    z-index: 5;
+    transform: translateY(-2000px);
+    transition: 0.5s;
+}
+
+nav {
+    text-align: center;
+    margin: 80px auto;
+}
+
+nav>a {
+    font-size: 1.75em;
+    margin: 50px auto;
+    display: block;
+    width: fit-content;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.croix {
+    width: 50px;
+    height: 50px;
+    margin: 160px auto 0px auto;
+    background: var(--main_gradient);
+    display: grid; 
+    place-content: center;
+    border-radius: 100%;
+}
+
+.croix>svg {
+    fill: var(--white);
+}
+
+.contact {
+    display: none;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 1.2em;
+    border-radius: 40px;
+    background: var(--main_gradient);
+    background-position: bottom;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+footer>p {
+    margin: 40px auto;
+    font-family: 'Poppins';
+}
+
+@keyframes rotate-planet {
+    from {
+        transform: rotateX(40deg) rotate(0deg);
+    }
+
+    to {
+        transform: rotateX(40deg) rotate(360deg);
+    }
+    
+}
+
+@keyframes rotate-planet2 {
+    from {
+        transform: rotateY(80deg) rotate(0deg);
+    }
+
+    to {
+        transform: rotateY(80deg) rotate(360deg);
+    }
+    
+}
+
+@keyframes opacity-message {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+}
